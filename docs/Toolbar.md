@@ -2,19 +2,23 @@
 A simple, responsive toolbar.
 
 ## Importing
-```tsx
+```typescript
 import { Toolbar, ToolbarProps, ToolbarItem } from 'small-ui';
 ```
 
 ## Using
 
-```
-<Toolbar
-  items={[
-    { key: 'home', label: 'Home', href: '/#/home' },
-    { key: 'about', label: 'About', href: '/#/about' }
-  ]}
-/>
+```typescript
+render() {
+  return (
+    <Toolbar
+      items={[
+        { key: 'home', label: 'Home', href: '/#/home' },
+        { key: 'about', label: 'About', href: '/#/about' }
+      ]}
+    />
+  );
+}
 ```
 
 ## Props
