@@ -3,4 +3,4 @@ A small responsive ui framework.
 
 
 ## Components
-- [Toolbar](/Toolbar)
+- [Toolbar](/small-ui/Toolbar)
