@@ -3,7 +3,7 @@ A simple, responsive toolbar.
 
 ## Importing
 ```tsx
-import { Toolbar } from 'small-ui';
+import { Toolbar, ToolbarProps, ToolbarItem } from 'small-ui';
 ```
 
 ## Using
