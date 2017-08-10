@@ -1,0 +1,17 @@
+////////// Colors
+$dark: black;
+$light: white;
+$primary: green;
+$primary-dark: darkgreen;
+$highlight: #ccc;
+////////// toolbar
+$toolbar-height: 50px;
+$toolbar-background: transparent;
+$toolbar-item-spacing: 20px;
+$toolbar-border-bottom: 1px solid $primary;
+$toolbar-item-border-top: 1px solid $dark;
+// This is a workaround for the sliding drawer
+$toolbar-estimated-max-height: 300px;
+// Responsive / Grid
+$breakpoints: (s: 320px, m: 641px, l: 1025px);
+$grid-items: 12;

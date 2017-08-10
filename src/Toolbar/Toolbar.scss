@@ -1,0 +1,100 @@
+@import '../variables.scss';
+.toolbar {
+  border-bottom: $toolbar-border-bottom;
+  line-height: $toolbar-height;
+  background: $toolbar-background;
+  h1,
+  i {
+    display: inline;
+    font-size: 24px;
+    line-height: $toolbar-height;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  i {
+    float: left;
+    margin: 0 $toolbar-item-spacing;
+  }
+  i,
+  div {
+    transition-property: max-height, transform;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+  }
+  div {
+    overflow-y: hidden;
+    max-height: $toolbar-estimated-max-height;
+    a {
+      display: block;
+      border-top: $toolbar-item-border-top;
+      padding-left: $toolbar-item-spacing;
+      height: $toolbar-height - 10px;
+      line-height: $toolbar-height - 10px;
+      text-decoration: none;
+      color: $dark;
+      &:last-of-type {
+        border-bottom: none;
+      }
+      &:active,
+      &:hover {
+        color: $primary;
+        background-color: $highlight;
+      }
+      &:visited {
+        color: $dark;
+      }
+    }
+  }
+  &.open {
+    i {
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+    }
+  }
+  &.closed {
+    div {
+      transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+      max-height: 0;
+    }
+  }
+  @media (min-width: 641px) {
+    i {
+      display: none;
+    }
+    h1 {
+      margin-left: $toolbar-item-spacing;
+    }
+    div {
+      float: right;
+      a {
+        display: inline;
+        border-top: unset;
+        margin: 0 $toolbar-item-spacing;
+        padding: 0;
+        outline: 0;
+        outline-style: none;
+        &:active,
+        &:hover {
+          color: $primary;
+          background-color: unset;
+        }
+        &:active {
+          color: $primary-dark;
+        }
+      }
+    }
+    &.closed {
+      div {
+        max-height: $toolbar-estimated-max-height;
+      }
+    }
+  }
+  &:after {
+    content: '';
+    clear: both;
+  }
+}
