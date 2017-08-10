@@ -1,4 +1,3 @@
-# small-ui
 A small responsive ui framework.
 
 
