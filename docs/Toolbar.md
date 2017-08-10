@@ -1,3 +1,5 @@
+- [Home](/small-ui)
+
 # Toolbar
 A simple, responsive toolbar.
 
