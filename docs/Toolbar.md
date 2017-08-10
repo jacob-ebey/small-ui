@@ -16,3 +16,18 @@ import { Toolbar } from 'small-ui';
   ]}
 />
 ```
+
+## Props
+```typescript
+export interface ToolbarProps {
+  className?: string;
+  label?: string;
+  items?: ToolbarItem[];
+}
+
+export interface ToolbarItem {
+  key?: string;
+  label?: string;
+  href?: string;
+}
+```
